@@ -7,26 +7,26 @@
     <link rel="stylesheet" href="./style.css" type="text/css">
   </head>
   <body onload="init()">
-
     <div class="ex1">
-      <div class="ex2">
-      </div >
+
+        <input type="text" id="valor_numero" maxlength="20" value=" 0" class="numero" >
+
       <div class="ex4">
         <button class="button button1">0</button>
         <button class="button button1">0</button>
-        <button class="button button1">x</button>
+        <input type="button" name="x" class="button button1" id="x" value="x" onclick="operation(this)" />
         <br>
-        <button class="button button1">/</button>
+        <input type="button" name="/" class="button button1" id="/" value="/" onclick="operation(this)" />
         <button class="button button1">0</button>
-        <button class="button button1">%</button>
-        <br>
-        <button class="button button1">0</button>
-        <button class="button button1">0</button>
-        <button class="button button1">-</button>
+        <input type="button" name="%" class="button button1" id="%" value="%" onclick="operation(this)" />
         <br>
         <button class="button button1">0</button>
         <button class="button button1">0</button>
-        <button class="button button1">+</button>
+        <input type="button" name="-" class="button button1" id="-" value="-" onclick="operation(this)" />
+        <br>
+        <button class="button button1">0</button>
+        <button class="button button1">0</button>
+        <input type="button" name="+" class="button button1" id="+" value="+" onclick="operation(this)" />
       </div>
       <div class="ex3">
         <input type="button" name="7" class="button button1" id="7" value="7" onclick="num(this)" />
@@ -42,8 +42,8 @@
         <input type="button" name="3" class="button button1" id="3" value="3" onclick="num(this)" />
         <br>
         <input type="button" name="0" class="button button1" id="0" value="0" onclick="num(this)" />
-        <button class="button button1">. </button>
-        <button class="button button1">=</button>
+        <input type="button" name="." class="button button1" id="." value="." onclick="num(this)" />
+        <input type="button" name="=" class="button button1" id="=" value="=" onclick="result(this)" />
       </div>
     </div>
   </body>
