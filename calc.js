@@ -1,11 +1,11 @@
 function init(){
 var numm = document.getElementById('1');
-console.log(numm);
 }
 
 var num1 = 0;
 var num2 = 0;
 var opera = 0;
+
 function num(comp) {
   let id = comp.id;
   if (opera == 0){
@@ -18,6 +18,7 @@ function num(comp) {
     }else{
       num1 += id;
     }
+    print_number(num1)
   }else{
     if(num2==0 && num2 !== '0.'){
       if (id=='.'){
@@ -28,15 +29,14 @@ function num(comp) {
     }else{
       num2 += id;
     }
+    print_number(num1+opera+num2)
   }
-  console.log(num1);
-  console.log(num2);
 }
 
 function operation(comp) {
   let id = comp.id;
   opera = id;
-    console.log(opera);
+  print_number(num1+opera)
 }
 
 function result(comp){
@@ -58,14 +58,13 @@ function result(comp){
     case '%':
         num1 = Math.pow(num2, num1);
     break;
-}
-    console.log(num1);
+    }
+    print_number(num1)
     num1 = 0;
     num2 = 0;
     opera = 0;
+  }
 
-}
-
-function refrescar(){
-    document.getElementById("valor_numero").value = num1;
+function print_number(cadena){
+    document.getElementById("valor_numero").value = cadena;
 }
