@@ -24,6 +24,7 @@ div.ex3{  border-radius: 20px;
   padding: 20px;
   width: 250px;
   height: 250px;
+  margin: 20px 5px;
   margin-left: auto;
   background-color: #FFFFFF;
   opacity: 0.9;
@@ -37,6 +38,7 @@ div.ex4{  border-radius: 20px;
   float: left;
   background-color: #FFFFFF;
   opacity: 0.9;
+  margin: 20px 5px;
   filter: alpha(opacity=90);
 }
 .button {
@@ -51,4 +53,13 @@ div.ex4{  border-radius: 20px;
   cursor: pointer;
   border-radius: 12px;
 
+}
+.numero{
+  color: black;
+  border-radius: 12px;
+  padding: 10px 10px 10px;
+  width: 555px;
+  line-height: 45px;
+  font-size: 30px;
+  text-align: right;
 }
