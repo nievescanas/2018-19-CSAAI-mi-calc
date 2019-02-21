@@ -1,19 +1,21 @@
-function init(){
-var numm = document.getElementById('1');
+function main(){
+  var numm = document.getElementById('boton_num');
+  var trace = document.getElementById('boton_trace');
 }
 
 var num1 = 0;
 var num2 = 0;
-var opera = 0;
+var symbol = 0;
 
-function num(comp) {
-  let id = comp.id;
-  if (opera == 0){
+function num(number) {
+  let id = number.id;
+  if (symbol == 0){
     if(num1==0 && num1 !== '0.'){
       if (id=='.'){
         num1 = '0.';
       }else{
         num1 = id;
+        console.log("1");
       }
     }else{
       num1 += id;
@@ -29,25 +31,25 @@ function num(comp) {
     }else{
       num2 += id;
     }
-    print_number(num1+opera+num2)
+    print_number(num1+symbol+num2)
   }
 }
 
-function operation(comp) {
-  let id = comp.id;
-  opera = id;
-  print_number(num1+opera)
+function operation(opera) {
+  let id = opera.id;
+  symbol = id;
+  print_number(num1+symbol)
 }
 
-function result(comp){
+function result(){
   num1 = parseFloat(num1);
   num2 = parseFloat(num2);
-  switch (opera){
+  switch (symbol){
     case '+':
         num1 += num2;
     break;
     case '-':
-        num1 = num2 - num1;
+        num1 = num1 - num2;
     break;
     case 'x':
         num1 *= num2;
@@ -55,14 +57,14 @@ function result(comp){
     case '/':
         num1 = num1 / num2;
     break;
-    case '%':
-        num1 = Math.pow(num2, num1);
+    case '^':
+        num1 = Math.pow(num1, num2);
     break;
     }
     print_number(num1)
     num1 = 0;
     num2 = 0;
-    opera = 0;
+    symbol = 0;
   }
 
 function print_number(cadena){
