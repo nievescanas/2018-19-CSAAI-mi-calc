@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practica 2 : Calculadora</title>
+    <script type="text/javascript" src="calc.js"></script>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+  </head>
+  <body onload="init()">
+    <div class="ex1">
+      <input type="text" id="valor_numero" maxlength="20" value=" 0" class="numero" >
+      <div class="ex4">
+        <button class="button button1">0</button>
+        <button class="button button1">0</button>
+        <input type="button" name="x" class="button button1" id="x" value="x" onclick="operation(this)" />
+        <br>
+        <input type="button" name="/" class="button button1" id="/" value="/" onclick="operation(this)" />
+        <button class="button button1">0</button>
+        <input type="button" name="^" class="button button1" id="^" value="^" onclick="operation(this)" />
+        <br>
+        <button class="button button1">0</button>
+        <button class="button button1">0</button>
+        <input type="button" name="-" class="button button1" id="-" value="-" onclick="operation(this)" />
+        <br>
+        <button class="button button1">0</button>
+        <button class="button button1">0</button>
+        <input type="button" name="+" class="button button1" id="+" value="+" onclick="operation(this)" />
+      </div>
+      <div class="ex3">
+        <input type="button" name="7" class="button button1" id="7" value="7" onclick="num(this)" />
+        <input type="button" name="8" class="button button1" id="8" value="8" onclick="num(this)" />
+        <input type="button" name="9" class="button button1" id="9" value="9" onclick="num(this)" />
+        <br>
+        <input type="button" name="4" class="button button1" id="4" value="4" onclick="num(this)" />
+        <input type="button" name="5" class="button button1" id="5" value="5" onclick="num(this)" />
+        <input type="button" name="6" class="button button1" id="6" value="6" onclick="num(this)" />
+        <br>
+        <input type="button" name="1" class="button button1" id="1" value="1" onclick="num(this)" />
+        <input type="button" name="2" class="button button1" id="2" value="2" onclick="num(this)" />
+        <input type="button" name="3" class="button button1" id="3" value="3" onclick="num(this)" />
+        <br>
+        <input type="button" name="0" class="button button1" id="0" value="0" onclick="num(this)" />
+        <input type="button" name="." class="button button1" id="." value="." onclick="num(this)" />
+        <input type="button" name="=" class="button button1" id="=" value="=" onclick="result()" />
+      </div>
+    </div>
+  </body>
+</html>
