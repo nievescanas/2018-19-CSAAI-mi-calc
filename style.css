@@ -52,8 +52,22 @@ div.ex4{  border-radius: 20px;
   margin: 5px 5px 5px;
   cursor: pointer;
   border-radius: 12px;
-
 }
+
+.buttonO {
+  background-color: #FFFFFF;
+  border-color: : #9DC7C4;
+  color: black;
+  padding: 15px 27px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 5px 10px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+
 .numero{
   color: black;
   border-radius: 12px;

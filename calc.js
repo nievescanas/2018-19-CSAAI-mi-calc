@@ -21,6 +21,8 @@ function num(number) {
       num1 += id;
     }
     print_number(num1)
+  }else if(symbol == AC){
+    print_number("");
   }else{
     if(num2==0 && num2 !== '0.'){
       if (id=='.'){
@@ -38,7 +40,11 @@ function num(number) {
 function operation(opera) {
   let id = opera.id;
   symbol = id;
-  print_number(num1+symbol)
+  if(symbol == 'AC'){
+    print_number("");
+  }else{
+    print_number(num1+symbol);
+  }
 }
 
 function result(){
@@ -59,6 +65,9 @@ function result(){
     break;
     case '^':
         num1 = Math.pow(num1, num2);
+    break;
+    case 'AC':
+        num1 = "";
     break;
     }
     print_number(num1)
