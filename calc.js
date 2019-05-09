@@ -66,7 +66,7 @@ function result(){
     case '^':
         num1 = Math.pow(num1, num2);
     break;
-    case 'AC':
+    case '':
         num1 = "";
     break;
     }
